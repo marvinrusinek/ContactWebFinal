@@ -1,0 +1,31 @@
+﻿@model ContactWeb.Models.MobileContactViewModel
+@{
+    Layout = null;
+}
+
+<section data-role="page" id="detail">
+<header data-role="header">
+    <h1>Detail for @Model.Contact.FirstName @Model.Contact.LastName</h1>
+</header>
+<div data-role="content">
+
+<dl>
+    <dt>Email</dt>
+    <dd>@Model.Contact.Email</dd>
+    <dt>Friends</dt>
+        <dd>
+            <ul>
+            @foreach (var friend in Model.Contact.Friends)
+            {
+                <li>@Html.ActionLink(String.Format("{0}, {1} ({2})", friend.LastName, friend.FirstName, Model.NumberOfFriends(friend)), "Detail", new { id = friend.Id }, new {data_rel="dialog" })</li>
+            }
+            </ul>
+        </dd>
+</dl>
+
+
+</div>
+<footer data-role="footer">
+    <h1>All Rights Reserved</h1>
+</footer>
+</section>

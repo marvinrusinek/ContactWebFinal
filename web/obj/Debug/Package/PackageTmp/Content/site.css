@@ -1,0 +1,161 @@
+﻿body 
+{
+    font-family:Verdana;
+    font-size:smaller;
+    margin:0px;
+    background-color:#efefef;
+}
+
+div.container
+{
+    width:1000px;
+    border:solid 1px #333;
+    border-width: 2px;
+    margin: 0 auto;
+    background-color:#fff;
+    padding:5px;
+    border-width:0px 1px 1px 1px;
+}
+
+h1.header
+{
+    border-bottom:solid 1px #333;
+    color:#666;
+}
+ul.menu
+{
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+}
+
+ul.menu li
+{
+    float:left;
+    padding:3px;
+    margin-right:5px;
+    font-family:Tahoma;
+    border: solid 1px #666;
+    border-radius:3px;
+    box-shadow: 0 0 3px #888;
+}
+
+ul.menu li a
+{
+     text-decoration:none;
+     color:#666;
+}
+
+ul.menu li a:hover
+{
+         color:#fff;
+}
+
+ul.menu li:hover, ul.menu li:hover a
+{
+     color:#fff;
+     background-color:#666;
+}
+
+fieldset.form div
+{
+    padding:10px;
+    clear:both;
+}
+
+fieldset.form div label
+{
+    width:120px;
+    display:block;
+    float:left;
+}
+
+fieldset.form div input
+{
+    float:left;
+    margin-left:130px;
+}
+
+ul.pager 
+{
+    list-style-type : none;
+    margin:0px;
+    padding:0px;
+}
+
+ul.pager li
+{
+    float: left;
+    border: solid 1px black;
+    padding: 3px;
+    margin-right: 3px;
+    border-radius: 2px;
+    background-color:#333;
+}
+
+ul.pager li.Selected
+{
+    background-color:#ffcc00;
+}
+
+ul.pager li a
+{
+    color:#fff;
+}
+
+
+ul.pager li.Selected a
+{
+    color:#333;
+}
+
+
+ul.pager li.Empty
+{
+    color:#999;
+    cursor:none;
+    background-color:#efefef;    
+}
+
+
+ul.menu li.Selected
+{
+    background-color:#333;
+}
+ul.menu li.Selected a
+{
+   color:#fff;
+}
+
+span.field-validation-error
+{
+    color:#f00;
+}
+
+span.isRole a
+{
+    color : Green;
+}
+
+div#message
+{
+    color:Red;
+}
+
+span.error
+{
+    font-size:smaller;
+    color:Red;
+}
+
+td.error
+{
+    border:solid 1px red;
+}
+
+a.disabled
+{
+    text-decoration:none;
+    color:#666;
+    cursor:none;
+}

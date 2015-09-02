@@ -1,0 +1,23 @@
+﻿@model ContactWeb.Models.RoleListViewModel
+
+@{
+    ViewBag.Title = "Roles";
+}
+
+<h2>Roles</h2>
+
+@using (Html.BeginForm("CreateRole", "Role"))
+{
+<fieldset>
+    <legend>Create Role</legend>
+    <input type="text" name="role" />
+    <input type="submit" value="Insert" />
+</fieldset>
+}
+
+<ul>
+    @foreach (var role in this.Model.Roles)
+    {
+        <li>@role</li>
+    }
+</ul>

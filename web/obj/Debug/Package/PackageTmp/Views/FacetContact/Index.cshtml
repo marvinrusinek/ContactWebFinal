@@ -1,0 +1,87 @@
+﻿@model ContactWeb.Models.FacetContactViewModel
+@{
+    ViewBag.Title = "Facet Search";
+}
+<script>
+    $(function () {
+        $("h3.allFilters").click(function () {
+            var form = $(this).parents("form");
+            $("input:checkbox", form).removeAttr("checked");
+            form.submit();
+        });
+
+        $("h3.filterHeader").click(function () {
+            var form = $(this).parents("form");
+            var container = $(this).parents("div.filterContainer");
+            $("input:checkbox", container).removeAttr("checked");
+            form.submit();
+        });
+
+        $("input.filter").click(function () {
+            var form = $(this).parents("form");
+            var name = $(this).attr("name");
+            var container = $(this).parents("div.filterContainer");
+            $("input[name=" + name + "]:checked", container).each(function (i) {
+                $(this).attr(name, name + "[" + i + "]");
+            });
+            $("input[name=" + name + "]:not(:checked)", container).each(function (i) {
+                $(this).removeAttr("name");
+            });
+            form.submit();
+        });
+    });
+</script>
+<h2>
+    Facet Search</h2>
+<div class="explanation">This page allows users to search on contacts based on independent faceted criteria.</div>
+@using (Html.BeginForm())
+{
+    <div style="width:180px;float:left;background-color:white">
+        <h3 class="allFilters">Filters</h3>
+        <div class="filterContainer">
+            <h3 class="filterHeader">
+                Search By Username</h3>
+            @foreach (var key in Model.UsernameMap.Keys)
+            {
+    
+                <span>@key</span> <span>(@(Model.UsernameMap[key]))</span>
+                <input type="checkbox" class="filter" name=ContactSearchParams.SelectedUsernameLetters value="@key" @(Model.ContactSearchParams.SelectedUsernameLetters.Contains(key) ? "checked=checked" : String.Empty)/>
+                <br />
+            }
+        </div>
+
+        <div class="filterContainer">
+            <h3 class="filterHeader">
+                Search By User Account Status</h3>
+            @foreach (var key in Model.UserAccountMap.Keys)
+            {
+    
+                <span>@key</span> <span>(@(Model.UserAccountMap[key]))</span>
+                <input type="checkbox"  class="filter" name=ContactSearchParams.SelectedUserAccountStatus value="@key" @(Model.ContactSearchParams.SelectedUserAccountStatus.Contains(key) ? "checked=checked" : String.Empty)/>
+            }
+        </div>
+        <div class="filterContainer">
+            <h3 class="filterHeader">
+                Search By Friends</h3>
+            @foreach (var key in Model.FriendsMap.Keys)
+            {
+    
+                <span>@key</span> <span>(@(Model.FriendsMap[key]))</span>
+                <input type="checkbox" class="filter" name=ContactSearchParams.SelectedFriendsStatus value="@key" @(Model.ContactSearchParams.SelectedFriendsStatus.Contains(key) ? "checked=checked" : String.Empty)/>
+                <br />
+            }
+        </div>
+    </div>
+
+    <div style="float:left;margin-left:10px;">
+    <h3>Results @Model.Contacts.Count</h3>
+    <ul>
+        @foreach (var item in Model.Contacts)
+        {
+            <li>@item.Username (@item.Friends.Count())</li>
+        }
+    </ul>
+    </div>
+    
+    <br clear="all" />
+}

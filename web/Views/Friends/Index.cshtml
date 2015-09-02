@@ -1,0 +1,37 @@
+﻿@model ContactWeb.Models.FriendsListViewModel
+
+@{
+    ViewBag.Title = "Friends";
+}
+
+<script>
+    $(function () {
+        $("#friendsSearch").autocomplete({
+            source: function (req, res) {
+                $.getJSON(
+                    '@Url.Action("Search", "Friends")',
+                    { term: req.term },
+                    function (success) {
+                        return res(success);
+                    }
+                );
+            },
+            select: function (ev, ui) {
+                var url = '@Url.Action("AddFriend", "Friends", new{username = Model.You.Username})&contactId=' + ui.item.id;
+                window.location.href = url;
+            }
+        })
+    });
+</script>
+
+<h2>Friends</h2>
+<fieldset>
+    <legend>Search for Friends</legend>
+    <input id="friendsSearch" />
+</fieldset>
+<ul>
+    @foreach (var contact in this.Model.YourFriends)
+    {
+        <li>@contact.FirstName @contact.LastName @contact.Email @Html.ActionLink("x", "RemoveFriend", new{username = Model.You.Username, contactId = contact.Id})</li>
+    }
+</ul>

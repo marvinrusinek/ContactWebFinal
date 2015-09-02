@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>Overview</h2>
+
+<ul>
+    <li>This application deals with one Entity - Contact</li>
+    <li>There is an IContactDAL - which describes a valid Contact Provider</li>
+    <li>ContactBUS - wraps around an IContactDAL whose implementation is determined at runtime</li>
+    <li>A simple IOC is used. Configuration settings are found in the web.config</li>
+    <li>.NET Membership and Role providers are wrapped in IMembershipProvider and IRoleProvider</li>
+    <li>An IFriendsDAL is used to group Contacts together as friends</li>
+    <li>There are both SqlServer and XML implementations of IFriendsDAL and IContactDAL</li>
+    <li>There is an XML provider for both Membership and Role Providers</li>
+    <li>The SqlContactLibrary contains sql server implmentations for IFriendsDAL and IContactDAL</li>
+    <li>The SqlContactLibrary.dll is not referenced by web application, it is copied in by a post build event.</li>
+    <li>The Membership provider integrates with a Contact based on username</li>
+</ul>
+
+<h2>Pages</h2>
+<ul>
+    <li>Home - this page</li>
+    <li>Facet Search - searching for contacts based on independent facets</li>
+    <li>Contacts - a custom paged view of Contacts with AJAX functionality for creating a Membership user and adding roles</li>
+    <li>Contact Alpha - a custom implementation for listing contacts alphabetically</li>
+    <li>Add Multiple - a custom implementation for adding multiple contacts</li>
+    <li>Knockout - same functionality as Add Multiple, but using the Knockout framework</li>
+    <li>Roles - a page for inserting and adding roles</li>
+    <li>Grid - a page which uses the MvcContribGrid for paging</li>
+    <li>Friends - a page which let's logged in users manage friends</li>
+    <li>Search - a search page using autocomplete and coffeescript - not yet implemented</li>
+</ul>
+

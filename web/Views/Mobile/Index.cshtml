@@ -1,0 +1,56 @@
+﻿@model ContactWeb.Models.MobileContactsViewModel
+@{
+    Layout = null;
+}
+<DOCTYPE html />
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+            <script>
+                $(document).bind("mobileinit", function () {
+                    $.mobile.page.prototype.options.addBackBtn = true;
+                });
+    </script>
+    <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+</head>
+<body>
+<section data-role="page" id="home" data-title="Contact List">
+    <header data-role="header" data-position="fixed">
+        <h1>Contacts</h1><a href="#about" data-role="button" data-icon="info" class="ui-btn-right">About Us</a>
+    </header>
+     <div data-role="content">
+        <ul data-role="listview" data-filter="true">
+            @foreach (var key in Model.Contacts.Keys.OrderBy(k=>k))
+            {
+            <li>
+                <a href="#" data-transition="fade">@key</a><span class="ui-li-count">@Model.Contacts[key].Count</span>
+                <ul data-role="listview">
+                @foreach (var contact in Model.Contacts[key])
+                {
+                    <li @(Model.Theme(contact))>@Html.ActionLink(String.Format("{0}, {1}", contact.LastName, contact.FirstName), "Detail", new { id = contact.Id }, new {data_contact_id = contact.Id }) <span class="ui-li-count">@Model.NumberOfFriends(contact)</span></li>
+                }
+                </ul>
+            </li>
+            }
+        </ul>
+     </div>
+     <footer data-role="footer">
+        <h1>All Rights Reserved</h1>
+     </footer>
+</section>
+
+<section data-role="page" id="about">
+    <header data-role="header">
+        <h1>About Us</h1>
+    </header>
+    <div data-role="content">
+        At ContactWeb we have many many many contacts. More than you can imagine. When you think of contacts, think ContactWeb.
+    </div>
+    <footer data-role="footer">
+        <h1>All Rights Reserved</h1>
+    </footer>
+</section>
+</body>
+</html>

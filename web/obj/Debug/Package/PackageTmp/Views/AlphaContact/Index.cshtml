@@ -1,0 +1,57 @@
+﻿@model ContactWeb.Models.ContactListAlphaViewModel
+@using MVCWebHelpers
+
+@{
+    ViewBag.Title = "AlphaList";
+}
+
+<h2>AlphaList</h2>
+
+
+@Html.AlphaLinks(new AlphaModel{LetterDictionary = Model.LetterDictionary, SelectedLetter = Model.SelectedLetter, UrlGeneratorFunction = s=>Url.Action("Index", "AlphaContact", new{alpha = s})})
+
+
+<br clear="all" />
+    <table>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                FirstName
+            </th>
+            <th>
+                LastName
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Username
+            </th>
+        </tr>
+
+@foreach (var item in Model.Contacts)
+       {
+    
+        <tr>
+            <td>
+                @item.Id
+            </td>
+            <td>
+                @item.FirstName
+            </td>
+            <td>
+                @item.LastName
+            </td>
+            <td>
+                @item.Email
+            </td>
+            <td>
+                @item.Username
+            </td>
+        </tr>
+    
+    }
+
+    </table>

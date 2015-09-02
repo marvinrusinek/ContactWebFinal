@@ -1,0 +1,48 @@
+﻿@model ContactWeb.Models.AddMultipleViewModel
+
+@{
+    ViewBag.Title = "Confirmation";
+}
+
+<h2>Confirmation: You Added the Following Users</h2>
+
+<table>
+    <tr>
+        <th>
+            FirstName
+        </th>
+        <th>
+            LastName
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            Username
+        </th>
+        <th>
+            IsEmpty
+        </th>
+    </tr>
+
+@foreach (var item in Model.Contacts) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Username)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsEmpty)
+        </td>
+    </tr>
+}
+
+</table>

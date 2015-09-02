@@ -1,0 +1,78 @@
+﻿@model ContactWeb.Models.AddMultipleViewModel
+@{
+    ViewBag.Title = "AddMultiple";
+}
+<script>
+    $(function () {
+        $("input#addMore").click(function () {
+            var form = $(this).parents("form");
+            form.attr("action", '@Url.Action("AddMore")');
+            form.submit();
+            return false;
+        });
+
+        $("input.removeContact").click(function () {
+            var index = $(this).parents("tr").index() - 1;
+            var form = $(this).parents("form");
+            form.attr("action", '@Url.Action("AddMultipleRemoveOne")?index=' + index);
+            form.submit();
+            return false;
+        });
+    });
+
+</script>
+<h2>
+    AddMultiple</h2>
+
+@Html.ValidationSummary(true)
+
+@using (Html.BeginForm())
+{
+    <input type="submit" value="add more" id="addMore" />
+    <table>
+        <tr>
+            <th>
+                FirstName
+            </th>
+            <th>
+                LastName
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Username
+            </th>
+            <th>
+            </th>
+        </tr>
+        @for (var i = 0; i < Model.Contacts.Count(); i++)
+        {
+            <tr>
+                <td>
+                    @Html.TextBoxFor(m => m.Contacts[i].FirstName)
+                    @Html.ValidationMessageFor(m => m.Contacts[i].FirstName, "*")
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Contacts[i].LastName)
+                    @Html.ValidationMessageFor(m => m.Contacts[i].LastName, "*")
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Contacts[i].Email)
+                    @Html.ValidationMessageFor(m => m.Contacts[i].Email, "*")
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Contacts[i].Username)
+                    @Html.ValidationMessageFor(m => m.Contacts[i].Username)
+                </td>
+                <td>
+                    @if (i != 0)
+                    {
+                        <input type="submit" value="remove" class="removeContact" />
+                    }
+                </td>
+            </tr>
+        }
+    </table>
+    <input type="submit" value="save" />
+}

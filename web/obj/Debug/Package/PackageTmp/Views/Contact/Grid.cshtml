@@ -1,0 +1,22 @@
+﻿@model ContactWeb.Models.ContactGridModel
+@using MvcContrib.UI.Grid
+@using MvcContrib.UI.Pager
+
+@{
+    ViewBag.Title = "Grid";
+}
+
+<h2>Grid</h2>
+
+@Html.Pager(Model.ContactPagedList)
+
+@(Html.Grid(Model.ContactPagedList)
+    .Columns(c =>
+        {
+            c.For(contact => contact.FirstName);
+            c.For(contact => contact.LastName);
+            c.For(contact => String.Format("username : {0}", contact.Username)).SortColumnName("Username").Named("Username");
+            c.For(contact => String.Format("email : {0}", contact.Email)).SortColumnName("Email").Named("Email");
+        }
+    )
+        .Sort(Model.GridSortOptions))

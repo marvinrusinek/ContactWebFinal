@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ContactDB" Class="ContactDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=&quot;C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\ContactWebFinal\web\App_Data\ContactDB.mdf&quot;;Integrated Security=True;User Instance=True" SettingsObjectName="SqlContactLibrary.Properties.Settings" SettingsPropertyName="ContactDBConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Contact" Member="Contacts">
+    <Type Name="Contact">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Contact_Friend" Member="Friends" ThisKey="Id" OtherKey="ContactId1" Type="Friend" />
+      <Association Name="Contact_Friend1" Member="Friends1" ThisKey="Id" OtherKey="ContactId2" Type="Friend" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Friends" Member="Friends">
+    <Type Name="Friend">
+      <Column Name="ContactId1" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ContactId2" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Contact_Friend" Member="Contact" ThisKey="ContactId1" OtherKey="Id" Type="Contact" IsForeignKey="true" />
+      <Association Name="Contact_Friend1" Member="Contact1" ThisKey="ContactId2" OtherKey="Id" Type="Contact" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

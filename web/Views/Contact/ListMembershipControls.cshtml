@@ -1,0 +1,41 @@
+﻿@model ContactWeb.Models.ContactUser
+@using MVCWebHelpers
+@{
+    Layout = null;
+}
+            <td>
+                @if(this.Context.Request.IsAjaxRequest()){
+                    <div id="messageHolder">@TempData["message"]</div>
+                }
+                @if (Model.IsAdmin)
+                {
+                    if (Model.IsUser)
+                    {
+                    <ul>
+                        @foreach (var role in Model.AllRoles)
+                        {
+                            <li>
+                                @if (Model.UserRoles.Contains(role))
+                                {
+                                    <span class="isRole">
+                                        @Html.ActionLink(role, "RemoveUserFromRole", "Contact", new { role = role, id = Model.Contact.Id}, new { title = "Remove from Role", @class = "postLink" })
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span>
+                                        @Html.ActionLink(role, "AddUserToRole", "Contact", new { role = role, id = Model.Contact.Id }, new { title = "Add to Role", @class = "postLink" })
+                                    </span>                                
+                                }
+                            </li>
+                        }
+                    </ul>
+                    }
+                    else
+                    {
+                    <span>
+                        @Html.ActionLink("Create Account", "CreateAccount", "Contact", new { id = Model.Contact.Id}, new { title = "Create User", @class = "postLink"})
+                    </span>                      
+                    }
+                }
+            </td>

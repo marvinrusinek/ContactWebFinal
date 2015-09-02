@@ -1,0 +1,45 @@
+﻿@model ContactWebLibrary.Contact
+
+@{
+    ViewBag.Title = "AdvancedForm";
+    Layout = null;
+}
+<div id="formContainer">
+<h2>
+    Contact</h2>
+<script>
+    model.Contact = @Html.Raw(new System.Web.Script.Serialization.JavaScriptSerializer().Serialize(Model));
+</script>
+
+
+@using (Html.BeginForm("AdvancedContact", "Contact", FormMethod.Post, new { name = "EntryForm" }))
+{
+       <input type="hidden" value="@Model.Id" name="Id" />
+        <fieldset id="ContactEditor" class="form">
+            <legend>Fields</legend>
+            <div>
+            @Html.LabelFor(c=>c.FirstName, "First Name")
+            @Html.TextBoxFor(c => c.FirstName)
+            @Html.ValidationMessageFor(c=>c.FirstName )
+            </div>
+
+            <div>
+            @Html.LabelFor(c => c.LastName, "Last Name")
+            @Html.TextBoxFor(c => c.LastName)
+            @Html.ValidationMessageFor(c=>c.LastName)
+            </div>
+
+            <div>
+            @Html.LabelFor(c=>c.Email)
+            @Html.TextBoxFor(c => c.Email)
+            @Html.ValidationMessageFor(c => c.Email)
+            </div>
+
+            <div>
+            @Html.LabelFor(c=>c.Username)
+            @Html.TextBoxFor(c=>c.Username)
+            @Html.ValidationMessageFor(c=>c.Username)
+            </div>
+            </fieldset>
+}
+</div>

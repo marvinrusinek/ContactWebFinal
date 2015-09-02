@@ -1,0 +1,108 @@
+﻿@model ContactWeb.Models.ContactListViewModel
+@using MVCWebHelpers
+<h2>
+    List</h2>
+<script>
+    $(function () {
+        $("a.Delete").click(function () {
+            if (window.confirm("Are you sure you want to delete this contact"))
+                $(this).parents("form").attr("action", $(this).attr("href")).submit();
+            return false;
+        });
+
+        $("a.postLink").live("click", function () {
+            var td = $(this).parents("TD");
+            $.post(
+                  this.href,
+                  function (html) {
+                      td.replaceWith($(html));
+                      $("div#message").empty().append($("div#messageHolder"));
+                  }
+            );
+            return false;
+        });
+    });
+</script>
+@using (Html.BeginForm())
+{
+    <fieldset>
+        <legend>Pager</legend>
+        @Html.PageLinks(new PagingModel { MaxPages = Model.MaxPages, CurrentPage = Model.CurrentPage, UrlGeneratorFunction = i => Url.Action("List", new { page = i }) })
+        <select name="page">
+            @for (var i = 1; i <= Model.MaxPages; i++)
+            {
+                <option value="@i" @(Model.CurrentPage == i ? "selected" : String.Empty)>@i</option>
+            }
+        </select>
+        <input type="submit" value="go" />
+    </fieldset>
+}
+
+<br clear="all" />
+<table>
+    <tr>
+        <th>
+        </th>
+        <th>
+            Id
+        </th>
+        <th>
+            FirstName
+        </th>
+        <th>
+            LastName
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            Username
+        </th>
+        <th>
+            User Roles
+        </th>
+    </tr>
+    @foreach (var item in Model.Contacts)
+    {
+        <tr>
+            <td>
+                @if (Model.IsAdmin)
+                {
+                    <span>@Html.ActionLink("Edit", "Edit", new { id = item.Id })</span>
+                    using (Html.BeginForm())
+                    {
+                        <span>@Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "Delete" })</span>
+
+                    }
+
+                }
+            </td>
+            <td>
+                @item.Id
+            </td>
+            <td>
+                @item.FirstName
+            </td>
+            <td>
+                @item.LastName
+            </td>
+            <td>
+                @item.Email
+            </td>
+            <td>
+                @item.Username
+            </td>
+            @{Html.RenderPartial("ListMembershipControls", new ContactWeb.Models.ContactUser {
+                  AllRoles = Model.AllRoles, 
+                  Contact = item, 
+                  IsAdmin = Model.IsAdmin, 
+                  UserRoles = Model.UserNameRoles.ContainsKey(item.Username.ToLower())?Model.UserNameRoles[item.Username.ToLower()] : new List<string>(),
+                  IsUser = Model.UserNameRoles.ContainsKey(item.Username.ToLower())           
+              });}
+        </tr>
+    
+    }
+</table>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>

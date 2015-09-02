@@ -1,0 +1,65 @@
+﻿@model ContactWeb.Models.ContactUser
+
+    <script>
+        $(function () {
+            $("input#save").click(function () {
+                $("input.userRole:checked").each(function (i) {
+                    this.name = "UserRoles[" + i + "]";
+                });
+
+            });
+        });
+    </script>
+    @using (Html.BeginForm()) {
+        <input type="hidden" value="@Model.Contact.Id" name="Contact.Id" />
+        <fieldset id="ContactEditor" class="form">
+            <legend>Fields</legend>
+            <div>
+            @Html.LabelFor(c=>c.Contact.FirstName, "First Name")
+            @Html.TextBoxFor(c => c.Contact.FirstName)
+            @Html.ValidationMessageFor(c=>c.Contact.FirstName )
+            </div>
+
+            <div>
+            @Html.LabelFor(c => c.Contact.LastName, "Last Name")
+            @Html.TextBoxFor(c => c.Contact.LastName)
+            @Html.ValidationMessageFor(c=>c.Contact.LastName)
+            </div>
+
+            <div>
+            @Html.LabelFor(c=>c.Contact.Email)
+            @Html.TextBoxFor(c => c.Contact.Email)
+            @Html.ValidationMessageFor(c => c.Contact.Email)
+            </div>
+
+            <div>
+            @Html.LabelFor(c=>c.Contact.Username)
+            @Html.TextBoxFor(c=>c.Contact.Username)
+            @Html.ValidationMessageFor(c=>c.Contact.Username)
+            </div>
+            
+            <div>
+                <label>Membership User: </label>@Html.CheckBoxFor(m=>m.IsUser)
+            </div>
+
+            <div>
+                <label>Roles : </label>
+                <br clear="all" />
+                    @{int i = 0;}
+                    @foreach (var role in Model.AllRoles)
+                    {
+                    <div>
+                       <label>@role</label> 
+                       <span><input type="checkbox" name="UserRoles[@(i++)]" value="@role" class="userRole" @(Model.UserRoles.Contains(role) ? "checked=checked": String.Empty)/></span>
+                    </div>
+                    }
+                
+            </div>
+
+            <p style="clear:both">
+                <input type="submit" value="@(Model.Contact.Id == 0 ? "Create" : "Edit" )" id="save"/>
+            </p>
+        </fieldset>
+
+    }
+

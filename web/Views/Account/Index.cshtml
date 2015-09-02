@@ -1,0 +1,13 @@
+﻿@model ContactWeb.Models.SimpleUser
+@{
+    Layout = null;
+}
+<div class="toolbar">           
+@if (Model.UserName != null)
+{
+        <span>@Html.ActionLink(String.Format("Logout {0}", Model.UserName), "Logout", "Account")</span>
+}
+else{
+        <span>@Html.ActionLink("Logon", "Logon", "Account")</span>
+}
+</div>

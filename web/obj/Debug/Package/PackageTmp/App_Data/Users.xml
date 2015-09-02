@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Users>
+  <User>
+    <Username>SGriffino</Username>
+    <Password>Password</Password>
+    <Email>Sorticia_Griffino@gmail.com</Email>
+    <Roles>
+      <Role>Admin</Role>
+    </Roles>
+  </User>
+  <User>
+    <Username>HVriffine</Username>
+    <Password>Password</Password>
+    <Email>Horticia_Vriffine@yahoo.com</Email>
+    <Roles></Roles>
+  </User>
+</Users>

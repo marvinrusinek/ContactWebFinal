@@ -1,0 +1,55 @@
+﻿@model ContactWeb.Models.AdvancedContactViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<script>
+model = @Html.Raw(new System.Web.Script.Serialization.JavaScriptSerializer().Serialize(Model));
+</script>
+<h2>Index</h2>
+
+<script>
+    $(function () {
+
+        var manager = {
+            Selected: null,
+            FormData: {}
+        };
+        $("a#showModel").click(function () {
+            console.log(model);
+        });
+        $("#AdvancedContactNav li a").click(function () {
+            var link = this;
+            if (manager.Selected)
+                manager.FormData[manager.Selected] = $("div#formArea form").serialize();
+
+
+            manager.Selected = $(this).attr("name");
+            $.get(
+                $(this).attr("href"),
+                manager.FormData[$(this).attr("name")],
+                function (html) {
+                    $("#formArea").empty();
+                    $("#formArea").html($(html));
+                }
+            );
+            return false;
+        });
+    });
+
+</script>
+<a id="showModel">show model</a>
+<br clear="all" />
+<div style="float:left; width:200px;">
+ <ul id="AdvancedContactNav">
+    <li>@Html.ActionLink("Contact", "Form", "Contact",null,  new { name = "Contact"})</li>
+    <li>@Html.ActionLink("PhoneNumbers", "Index", "PhoneNumberEntry", null,  new {name = "PhoneNumbers" })</li>
+    <li>Login Information</li>
+ </ul>
+</div>
+<div id="formArea" style="margin-left:210;float:left;padding-left:5px;background-color:#efefef;border-radius:6px;width:600px">
+
+</div>
+
+<br clear="all" />

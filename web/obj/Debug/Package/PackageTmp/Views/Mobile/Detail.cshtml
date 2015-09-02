@@ -1,0 +1,31 @@
+﻿@model ContactWebLibrary.Contact
+@{
+    Layout = null;
+}
+
+<section data-role="page" id="detail">
+<header data-role="header">
+    <h1>Detail for @Model.FirstName @Model.LastName</h1>
+</header>
+<div data-role="content">
+
+<dl>
+    <dt>Email</dt>
+    <dd>@Model.Email</dd>
+    <dt>Friends</dt>
+        <dd>
+            <ul>
+            @foreach (var friend in Model.Friends)
+            {
+                <li>@friend.FirstName, @friend.LastName</li>
+            }
+            </ul>
+        </dd>
+</dl>
+
+
+</div>
+<footer data-role="footer">
+    <h1>All Rights Reserved</h1>
+</footer>
+</section>

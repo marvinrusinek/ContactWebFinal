@@ -1,0 +1,41 @@
+﻿@model ContactWeb.Models.PhoneNumberEntryViewModel
+@{
+    ViewBag.Title = "Phone Numbers";
+    Layout = null;
+}
+<div id="formContainer">
+<h2>
+    Phone Numbers</h2>
+<script>
+    model.PhoneNumbers = @Html.Raw(new System.Web.Script.Serialization.JavaScriptSerializer().Serialize(Model.PhoneNumberEntries));
+</script>
+
+
+@using (Html.BeginForm("Index", "PhoneNumberEntry", FormMethod.Post, new { name = "EntryForm" }))
+{
+    <div id="msg"></div>
+    @TempData["message"]
+    <ul>
+        @{int i = 0;}
+        @foreach (var entry in Model.PhoneNumberEntries)
+        {
+            <li>
+                @Html.DropDownListFor(
+                m => Model.PhoneNumberEntries[i].PhoneNumberType,
+                entry.AvailableTypes.Select(t => new SelectListItem { Text = t, Selected = entry.PhoneNumberType == t }),
+                new { href = Url.Action("Change") })
+                @Html.TextBoxFor(m => Model.PhoneNumberEntries[i].PhoneNumber)
+                @if (Model.PhoneNumberEntries.Count() > 1)
+                {
+                    @Html.ActionLink("x", "Delete", new { index = i }, new { @class = "postLink" });
+                }
+                @Html.ValidationMessageFor(m=>Model.PhoneNumberEntries[i].PhoneNumber)
+            </li>
+                i++;
+        }
+    </ul>
+    @Html.ActionLink("add", "Add", null, new { @class = String.Format("postLink addLink{0}", Model.Types.Count == Model.PhoneNumberEntries.Count ? " disabled" : String.Empty) }) 
+    <br />
+    @Html.ActionLink("save", "Save", null, new { @class = "postLink" })
+}
+</div>

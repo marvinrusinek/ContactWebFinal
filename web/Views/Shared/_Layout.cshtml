@@ -1,0 +1,55 @@
+﻿@using MVCWebHelpers
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+   @MvcHtmlString.Create((SquishIt.Framework.Bundle.Css()
+.Add("~/Content/site.css")
+.Add("~/Content/test.css")
+.Render("~/Content/combined_#.css")))
+
+
+
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
+    <script src='@Url.Content("~/Content/knockout-2.0.0.js")'></script>
+    <script src='@Url.Content("~/Content/common.js")'></script>
+@*@MvcHtmlString.Create((SquishIt.Framework.Bundle.JavaScript()
+    .Add("~/content/facet.coffee")
+    .Add("~/content/contact.search.coffee")
+    .Render("~/content/js-#.js")))*@
+    <script>
+
+        if (typeof ($) == 'undefined')
+            document.write('<script src="\/Scripts\/jquery.min.js"><\/script>');
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Contacts</h1>
+        <ul class="menu">
+            @Html.NavLink("home", "index", (a,c)=>Html.ActionLink("Home", a, c ), true)
+            @Html.NavLink("facetcontact", "index", (a,c)=>Html.ActionLink("Facet Search", a, c ), true)
+            @Html.NavLink("contact", "list", (a, c) => Html.ActionLink("Contacts", a, c), true)
+            @Html.NavLink("alphacontact", "index", (a, c) => Html.ActionLink("Contact Alpha", a, c, new { alpha = "A" }, null), true)
+            @Html.NavLink("addmultiplecontact", "addmultiple", (a, c) => Html.ActionLink("Add Multiple", a, c), Roles.IsUserInRole("Admin"))
+            @Html.NavLink("addmultiplecontact", "knockout", (a, c) => Html.ActionLink("Knockout", a, c), Roles.IsUserInRole("Admin"))
+            @Html.NavLink("role", "index", (a, c) => Html.ActionLink("Roles", a, c), Roles.IsUserInRole("Admin"))
+            @Html.NavLink("contact", "grid", (a, c) => Html.ActionLink("Grid", a, c), true)
+            @Html.NavLink("friends", "index", (a, c) => Html.ActionLink("Friends", a, c, new { username = Membership.GetUser().UserName }, null), Membership.GetUser() != null)
+            @Html.NavLink("contact", "search", (a,c)=>Html.ActionLink("Search", a, c), true)
+            @Html.NavLink("advancedcontact", "index", (a,c)=>Html.ActionLink("Advanced Contact", a, c), true)
+        </ul>
+        <br clear="all" />
+        @{Html.RenderAction("Index", "Account");}
+        <div id="message">
+            @TempData["message"]
+        </div>
+        <div class="contentArea">
+        @RenderBody()
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+C:\Users\computerlab\Desktop\eric\ContactWebStart6\ContactWebStart\SqlContactLibrary\bin\Debug\SqlContactLibrary.dll.config
+C:\Users\computerlab\Desktop\eric\ContactWebStart6\ContactWebStart\SqlContactLibrary\bin\Debug\SqlContactLibrary.dll
+C:\Users\computerlab\Desktop\eric\ContactWebStart6\ContactWebStart\SqlContactLibrary\bin\Debug\SqlContactLibrary.pdb
+C:\Users\computerlab\Desktop\eric\ContactWebStart6\ContactWebStart\SqlContactLibrary\bin\Debug\ContactWebLibrary.dll
+C:\Users\computerlab\Desktop\eric\ContactWebStart6\ContactWebStart\SqlContactLibrary\bin\Debug\EntityFramework.dll
+C:\Users\computerlab\Desktop\eric\ContactWebStart6\ContactWebStart\SqlContactLibrary\bin\Debug\ekCommonLibs.dll
+C:\Users\computerlab\Desktop\eric\ContactWebStart6\ContactWebStart\SqlContactLibrary\bin\Debug\ContactWebLibrary.pdb
+C:\Users\computerlab\Desktop\eric\ContactWebStart6\ContactWebStart\SqlContactLibrary\bin\Debug\ekCommonLibs.pdb
+C:\Users\computerlab\Desktop\eric\ContactWebStart6\ContactWebStart\SqlContactLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\computerlab\Desktop\eric\ContactWebStart6\ContactWebStart\SqlContactLibrary\obj\Debug\SqlContactLibrary.dll
+C:\Users\computerlab\Desktop\eric\ContactWebStart6\ContactWebStart\SqlContactLibrary\obj\Debug\SqlContactLibrary.pdb
+C:\Users\ekatz\Downloads\ContactWebEndOfClassWithDB\ContactWebEndOfClassWithDB\SqlContactLibrary\bin\Debug\SqlContactLibrary.dll.config
+C:\Users\ekatz\Downloads\ContactWebEndOfClassWithDB\ContactWebEndOfClassWithDB\SqlContactLibrary\bin\Debug\SqlContactLibrary.dll
+C:\Users\ekatz\Downloads\ContactWebEndOfClassWithDB\ContactWebEndOfClassWithDB\SqlContactLibrary\bin\Debug\SqlContactLibrary.pdb
+C:\Users\ekatz\Downloads\ContactWebEndOfClassWithDB\ContactWebEndOfClassWithDB\SqlContactLibrary\bin\Debug\ContactWebLibrary.dll
+C:\Users\ekatz\Downloads\ContactWebEndOfClassWithDB\ContactWebEndOfClassWithDB\SqlContactLibrary\bin\Debug\EntityFramework.dll
+C:\Users\ekatz\Downloads\ContactWebEndOfClassWithDB\ContactWebEndOfClassWithDB\SqlContactLibrary\bin\Debug\ekCommonLibs.dll
+C:\Users\ekatz\Downloads\ContactWebEndOfClassWithDB\ContactWebEndOfClassWithDB\SqlContactLibrary\bin\Debug\ContactWebLibrary.pdb
+C:\Users\ekatz\Downloads\ContactWebEndOfClassWithDB\ContactWebEndOfClassWithDB\SqlContactLibrary\bin\Debug\ekCommonLibs.pdb
+C:\Users\ekatz\Downloads\ContactWebEndOfClassWithDB\ContactWebEndOfClassWithDB\SqlContactLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ekatz\Downloads\ContactWebEndOfClassWithDB\ContactWebEndOfClassWithDB\SqlContactLibrary\obj\Debug\SqlContactLibrary.dll
+C:\Users\ekatz\Downloads\ContactWebEndOfClassWithDB\ContactWebEndOfClassWithDB\SqlContactLibrary\obj\Debug\SqlContactLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson7\ContactWebStart7\SqlContactLibrary\bin\Debug\SqlContactLibrary.dll.config
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson7\ContactWebStart7\SqlContactLibrary\bin\Debug\SqlContactLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson7\ContactWebStart7\SqlContactLibrary\bin\Debug\SqlContactLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson7\ContactWebStart7\SqlContactLibrary\bin\Debug\ContactWebLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson7\ContactWebStart7\SqlContactLibrary\bin\Debug\EntityFramework.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson7\ContactWebStart7\SqlContactLibrary\bin\Debug\ekCommonLibs.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson7\ContactWebStart7\SqlContactLibrary\bin\Debug\ContactWebLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson7\ContactWebStart7\SqlContactLibrary\bin\Debug\ekCommonLibs.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson7\ContactWebStart7\SqlContactLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson7\ContactWebStart7\SqlContactLibrary\obj\Debug\SqlContactLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson7\ContactWebStart7\SqlContactLibrary\obj\Debug\SqlContactLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson7\ContactWebEnd7\SqlContactLibrary\bin\Debug\SqlContactLibrary.dll.config
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson7\ContactWebEnd7\SqlContactLibrary\bin\Debug\SqlContactLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson7\ContactWebEnd7\SqlContactLibrary\bin\Debug\SqlContactLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson7\ContactWebEnd7\SqlContactLibrary\bin\Debug\ContactWebLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson7\ContactWebEnd7\SqlContactLibrary\bin\Debug\ekCommonLibs.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson7\ContactWebEnd7\SqlContactLibrary\bin\Debug\EntityFramework.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson7\ContactWebEnd7\SqlContactLibrary\bin\Debug\ContactWebLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson7\ContactWebEnd7\SqlContactLibrary\bin\Debug\ekCommonLibs.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson7\ContactWebEnd7\SqlContactLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson7\ContactWebEnd7\SqlContactLibrary\obj\Debug\SqlContactLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson7\ContactWebEnd7\SqlContactLibrary\obj\Debug\SqlContactLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson8\ContactWebStart8\SqlContactLibrary\bin\Debug\SqlContactLibrary.dll.config
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson8\ContactWebStart8\SqlContactLibrary\bin\Debug\SqlContactLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson8\ContactWebStart8\SqlContactLibrary\bin\Debug\SqlContactLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson8\ContactWebStart8\SqlContactLibrary\bin\Debug\ContactWebLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson8\ContactWebStart8\SqlContactLibrary\bin\Debug\ekCommonLibs.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson8\ContactWebStart8\SqlContactLibrary\bin\Debug\EntityFramework.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson8\ContactWebStart8\SqlContactLibrary\bin\Debug\ContactWebLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson8\ContactWebStart8\SqlContactLibrary\bin\Debug\ekCommonLibs.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson8\ContactWebStart8\SqlContactLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson8\ContactWebStart8\SqlContactLibrary\obj\Debug\SqlContactLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson8\ContactWebStart8\SqlContactLibrary\obj\Debug\SqlContactLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson8\ContactWebEnd8\SqlContactLibrary\bin\Debug\SqlContactLibrary.dll.config
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson8\ContactWebEnd8\SqlContactLibrary\bin\Debug\SqlContactLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson8\ContactWebEnd8\SqlContactLibrary\bin\Debug\SqlContactLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson8\ContactWebEnd8\SqlContactLibrary\bin\Debug\ContactWebLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson8\ContactWebEnd8\SqlContactLibrary\bin\Debug\ekCommonLibs.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson8\ContactWebEnd8\SqlContactLibrary\bin\Debug\EntityFramework.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson8\ContactWebEnd8\SqlContactLibrary\bin\Debug\ContactWebLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson8\ContactWebEnd8\SqlContactLibrary\bin\Debug\ekCommonLibs.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson8\ContactWebEnd8\SqlContactLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson8\ContactWebEnd8\SqlContactLibrary\obj\Debug\SqlContactLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson8\ContactWebEnd8\SqlContactLibrary\obj\Debug\SqlContactLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson9\ContactWebEnd8\SqlContactLibrary\bin\Debug\SqlContactLibrary.dll.config
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson9\ContactWebEnd8\SqlContactLibrary\bin\Debug\SqlContactLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson9\ContactWebEnd8\SqlContactLibrary\bin\Debug\SqlContactLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson9\ContactWebEnd8\SqlContactLibrary\bin\Debug\ContactWebLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson9\ContactWebEnd8\SqlContactLibrary\bin\Debug\ekCommonLibs.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson9\ContactWebEnd8\SqlContactLibrary\bin\Debug\EntityFramework.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson9\ContactWebEnd8\SqlContactLibrary\bin\Debug\ContactWebLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson9\ContactWebEnd8\SqlContactLibrary\bin\Debug\ekCommonLibs.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson9\ContactWebEnd8\SqlContactLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson9\ContactWebEnd8\SqlContactLibrary\obj\Debug\SqlContactLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson9\ContactWebEnd8\SqlContactLibrary\obj\Debug\SqlContactLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson9\ContactWebEnd9\SqlContactLibrary\bin\Debug\SqlContactLibrary.dll.config
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson9\ContactWebEnd9\SqlContactLibrary\bin\Debug\SqlContactLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson9\ContactWebEnd9\SqlContactLibrary\bin\Debug\SqlContactLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson9\ContactWebEnd9\SqlContactLibrary\bin\Debug\ContactWebLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson9\ContactWebEnd9\SqlContactLibrary\bin\Debug\EntityFramework.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson9\ContactWebEnd9\SqlContactLibrary\bin\Debug\ekCommonLibs.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson9\ContactWebEnd9\SqlContactLibrary\bin\Debug\ContactWebLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson9\ContactWebEnd9\SqlContactLibrary\bin\Debug\ekCommonLibs.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson9\ContactWebEnd9\SqlContactLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson9\ContactWebEnd9\SqlContactLibrary\obj\Debug\SqlContactLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson9\ContactWebEnd9\SqlContactLibrary\obj\Debug\SqlContactLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson10\ContactWebStart10\SqlContactLibrary\bin\Debug\SqlContactLibrary.dll.config
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson10\ContactWebStart10\SqlContactLibrary\bin\Debug\SqlContactLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson10\ContactWebStart10\SqlContactLibrary\bin\Debug\SqlContactLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson10\ContactWebStart10\SqlContactLibrary\bin\Debug\ContactWebLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson10\ContactWebStart10\SqlContactLibrary\bin\Debug\ekCommonLibs.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson10\ContactWebStart10\SqlContactLibrary\bin\Debug\EntityFramework.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson10\ContactWebStart10\SqlContactLibrary\bin\Debug\ContactWebLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson10\ContactWebStart10\SqlContactLibrary\bin\Debug\ekCommonLibs.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson10\ContactWebStart10\SqlContactLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson10\ContactWebStart10\SqlContactLibrary\obj\Debug\SqlContactLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson10\ContactWebStart10\SqlContactLibrary\obj\Debug\SqlContactLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson10\ContactWebEnd10\SqlContactLibrary\bin\Debug\SqlContactLibrary.dll.config
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson10\ContactWebEnd10\SqlContactLibrary\bin\Debug\SqlContactLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson10\ContactWebEnd10\SqlContactLibrary\bin\Debug\SqlContactLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson10\ContactWebEnd10\SqlContactLibrary\bin\Debug\ContactWebLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson10\ContactWebEnd10\SqlContactLibrary\bin\Debug\EntityFramework.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson10\ContactWebEnd10\SqlContactLibrary\bin\Debug\ekCommonLibs.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson10\ContactWebEnd10\SqlContactLibrary\bin\Debug\ContactWebLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson10\ContactWebEnd10\SqlContactLibrary\bin\Debug\ekCommonLibs.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson10\ContactWebEnd10\SqlContactLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson10\ContactWebEnd10\SqlContactLibrary\obj\Debug\SqlContactLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\Lesson10\ContactWebEnd10\SqlContactLibrary\obj\Debug\SqlContactLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\ContactWebFinal\SqlContactLibrary\bin\Debug\SqlContactLibrary.dll.config
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\ContactWebFinal\SqlContactLibrary\bin\Debug\SqlContactLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\ContactWebFinal\SqlContactLibrary\bin\Debug\SqlContactLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\ContactWebFinal\SqlContactLibrary\bin\Debug\ContactWebLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\ContactWebFinal\SqlContactLibrary\bin\Debug\ekCommonLibs.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\ContactWebFinal\SqlContactLibrary\bin\Debug\EntityFramework.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\ContactWebFinal\SqlContactLibrary\bin\Debug\ContactWebLibrary.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\ContactWebFinal\SqlContactLibrary\bin\Debug\ekCommonLibs.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\ContactWebFinal\SqlContactLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\ContactWebFinal\SqlContactLibrary\obj\Debug\SqlContactLibrary.dll
+C:\Users\ekatz\Documents\Magic Briefcase\nyu\9098\web\mvc\ContactWebFinal\SqlContactLibrary\obj\Debug\SqlContactLibrary.pdb
+C:\Users\Marvin Rusinek\Desktop\ericpkatz-ContactWeb-78bff1f\SqlContactLibrary\bin\Debug\SqlContactLibrary.dll.config
+C:\Users\Marvin Rusinek\Desktop\ericpkatz-ContactWeb-78bff1f\SqlContactLibrary\bin\Debug\SqlContactLibrary.dll
+C:\Users\Marvin Rusinek\Desktop\ericpkatz-ContactWeb-78bff1f\SqlContactLibrary\bin\Debug\SqlContactLibrary.pdb
+C:\Users\Marvin Rusinek\Desktop\ericpkatz-ContactWeb-78bff1f\SqlContactLibrary\bin\Debug\ContactWebLibrary.dll
+C:\Users\Marvin Rusinek\Desktop\ericpkatz-ContactWeb-78bff1f\SqlContactLibrary\bin\Debug\ekCommonLibs.dll
+C:\Users\Marvin Rusinek\Desktop\ericpkatz-ContactWeb-78bff1f\SqlContactLibrary\bin\Debug\ContactWebLibrary.pdb
+C:\Users\Marvin Rusinek\Desktop\ericpkatz-ContactWeb-78bff1f\SqlContactLibrary\bin\Debug\ekCommonLibs.pdb
+C:\Users\Marvin Rusinek\Desktop\ericpkatz-ContactWeb-78bff1f\SqlContactLibrary\obj\Debug\SqlContactLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Marvin Rusinek\Desktop\ericpkatz-ContactWeb-78bff1f\SqlContactLibrary\obj\Debug\SqlContactLibrary.dll
+C:\Users\Marvin Rusinek\Desktop\ericpkatz-ContactWeb-78bff1f\SqlContactLibrary\obj\Debug\SqlContactLibrary.pdb

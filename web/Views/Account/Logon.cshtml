@@ -1,0 +1,24 @@
+﻿@model ContactWeb.Models.SimpleUser
+
+@{
+    ViewBag.Title = "Logon";
+}
+
+<h2>Logon</h2>
+
+@using (Html.BeginForm()){
+<fieldset class="form">
+    <legend>Login</legend>
+    <div>
+    <label for="UserName">Username</label>
+    <input id="UserName" value="@Model.UserName" name="UserName" required />
+    </div>
+    <div>
+    <label for="Password">Password</label>
+    <input type="password" id="Password"  name="Password" required />
+    </div>
+    <p style="clear:both">
+        <input type="submit" value="logon" />
+    </p>
+</fieldset>
+}

@@ -1,0 +1,95 @@
+﻿@model ContactWeb.Models.AddMultipleViewModel
+@{
+    ViewBag.Title = "Add Multiple Using Knockout";
+}
+
+@if (this.ViewData["Errors"] != null)
+{
+    <script>
+    var errors = @Html.Raw(new System.Web.Script.Serialization.JavaScriptSerializer().Serialize(ViewData["Errors"]));
+    </script>
+}
+<script type="text/javascript">
+
+
+    var initialData = @Html.Raw(new System.Web.Script.Serialization.JavaScriptSerializer().Serialize(Model));
+
+
+    var viewModel = {
+        contacts : ko.observableArray(initialData.Contacts),
+        addContact : function(){
+            this.contacts.push({FirstName:"", LastName:"", Username:"", Email: ""});
+        },
+        removeContact : function(item){
+            this.contacts.remove(item);
+        }
+    }
+
+    $(function(){
+        ko.applyBindings(viewModel);
+        fixInputNames();
+        if(typeof(errors) != 'undefined')
+            showErrors();
+    });
+
+
+    var fixInputNames = function(){
+            $("tr.contactRow").each(function(i){
+                $("input", this).each(function(){
+                    $(this).attr("name", $(this).attr("name").replace("[]", "[" + i +"]"));
+                });
+            });
+        };
+
+    var showErrors = function(){
+            $("tr.contactRow").each(function(i){
+                $("input", this).each(function(){
+                    if(errors[$(this).attr("name")] && errors[$(this).attr("name")].length > 0){
+                        var span = $("<br /><span class='error' />").html(errors[$(this).attr("name")][0].ErrorMessage);
+                        $(this).after(span);
+                        $(this).parents("td").addClass("error");
+                    }
+                });
+            });        
+    };
+    $(function(){
+        $("#buttonSave").click(fixInputNames);
+    });
+</script>
+
+@using (Html.BeginForm())
+{
+<a data-bind="click: addContact" href="#">Add Contact</a>
+
+<table>
+    <tbody data-bind="foreach:contacts">
+        <tr class="contactRow" valign="top">
+        <td><a href="#" data-bind="click: function(){viewModel.removeContact($data)}">Delete</td>
+        <td><input data-bind="value: FirstName" name="Contacts[].FirstName"/></td>
+        <td><input data-bind="value: LastName" name= "Contacts[].LastName"  /></td>
+        <td><input data-bind="value: Username"  name="Contacts[].Username"/></td>
+        <td><input data-bind="value: Email"   name="Contacts[].Email"/></td>
+    </tr>
+    </tbody>
+    <thead>
+        <tr>
+            <th>Controls</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+</table>
+
+<button data-bind="enable: contacts().length > 0" type="submit" id="buttonSave">Save</button>
+}
+<script type="text/html" id="contactRowTemplate">
+    <tr class="contactRow" valign="top">
+        <td><a href="#" data-bind="click: function(){viewModel.removeContact($data)}">Delete</td>
+        <td><input data-bind="value: FirstName" name="Contacts[].FirstName"/></td>
+        <td><input data-bind="value: LastName" name= "Contacts[].LastName"  /></td>
+        <td><input data-bind="value: Username"  name="Contacts[].Username"/></td>
+        <td><input data-bind="value: Email"   name="Contacts[].Email"/></td>
+    </tr>
+</script>
